@@ -170,9 +170,8 @@ export const useTimer = () => {
 
     if (mode === "work") {
       updateStats("session");
-      new Audio("/sounds/notification.mp3").play();
     }
-
+    new Audio("/sounds/notification.mp3").play();
     setIsActive(false);
     setSettings((prev) => ({ ...prev, selectedSound: null }));
   }, [mode, setSettings]);

@@ -21,7 +21,6 @@ export const SettingsPanel: React.FC<SettingsProps> = ({
     onSettingsChange(tempSettings);
   };
 
-  // Update local state when settings prop changes
   React.useEffect(() => {
     setTempSettings(settings);
   }, [settings]);
@@ -77,7 +76,7 @@ export const SettingsPanel: React.FC<SettingsProps> = ({
           className="w-4 h-4 text-indigo-600 rounded focus:ring-indigo-500"
         />
         <label htmlFor="posturePause" className="text-gray-700">
-          作業モード（Work Mode）終了時にストレッチを促してもらう
+          作業モード（Work Mode）終了時のストレッチリマインダーを有効にする
         </label>
       </div>
 
@@ -87,7 +86,7 @@ export const SettingsPanel: React.FC<SettingsProps> = ({
           className="flex items-center justify-center space-x-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
         >
           <Save size={20} />
-          <span>Save</span>
+          <span>保存</span>
         </button>
       </div>
     </div>

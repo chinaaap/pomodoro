@@ -21,7 +21,7 @@ export const StretchPopup: React.FC<StretchPopupProps> = ({ onClose }) => {
         </h2>
 
         <div className="space-y-4 text-gray-600">
-          <p className="font-medium">手軽にできるストレッチ:</p>
+          <p className="font-medium">簡単にできるストレッチをご紹介します。</p>
           <ul className="list-disc list-inside space-y-2">
             <li>首を左右に傾け、各方向で15秒キープ</li>
             <li>両肩を上げて、数秒間キープした後、リラックス</li>
@@ -37,9 +37,9 @@ export const StretchPopup: React.FC<StretchPopupProps> = ({ onClose }) => {
 
         <button
           onClick={onClose}
-          className="mt-6 w-full px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+          className="mt-5 w-full px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
         >
-          Done!
+          完了
         </button>
       </div>
     </div>
